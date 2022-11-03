@@ -1,9 +1,9 @@
-export const FilterTask=()=>{
+export const FilterTask=({handleFilter})=>{
     return(
         <div>
-            <button>Done</button>
-            <button>Undone</button>
-            <button>All</button>
+            <button onClick={()=>handleFilter('Done')}>Done</button>
+            <button onClick={()=>handleFilter('Undone')}>Undone</button>
+            <button onClick={()=>handleFilter('All')}>All</button>
         </div>
     )
 }
